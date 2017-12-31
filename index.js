@@ -16,10 +16,3 @@ var todoList = {
 		this.displayTodos();
 	}
 };
-/*
-//function to delete todos from todo array
-function deleteTodo(position){
-	todos.splice(position,1);
-	displayTodos();
-}
-*/
