@@ -1,4 +1,3 @@
-
 var todoList = {
 	todos: ['item 1', 'item 2', 'item 3'],
 	displayTodos: function (){
@@ -7,14 +6,13 @@ var todoList = {
 	addTodo: function(todo){
 		this.todos.push(todo);
 		this.displayTodos();
+	},
+	changeTodo: function (position, newValue){
+		this.todos[position] = newValue;
+		this.displayTodos();
 	}
 };
 /*
-//function to change todos in todo array
-function changeTodo(position, newValue){
-	todos[position] = newValue;
-	displayTodos();
-}
 //function to delete todos from todo array
 function deleteTodo(position){
 	todos.splice(position,1);
