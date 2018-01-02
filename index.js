@@ -1,7 +1,10 @@
 var todoList = {
 	todos: [],
 	displayTodos: function (){
-		console.log("My todos", this.todos);
+		console.log("My todos:");
+		for(var i =0; i<this.todos.length; i++){
+			console.log(this.todos[i].todoText);
+		}
 	},
 	addTodo: function(todoText){
 		this.todos.push({
@@ -24,5 +27,3 @@ var todoList = {
 		this.displayTodos();
 	}
 };
-
-//version 4 complete
