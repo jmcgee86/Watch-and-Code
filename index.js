@@ -39,7 +39,6 @@ var todoList = {
 	toggleAll: function(){
 		var totalTodos = this.todos.length;
 		var completedTodos = 0;
-		
 		//get number of completed todos
 		for (var i = 0; i<totalTodos; i++){
 			if (this.todos[i].completed ===true){
@@ -60,4 +59,9 @@ var todoList = {
 		this.displayTodos();
 	}
 };
-//version6 complete
+
+var displayTodosButton = document.getElementById("displayTodosButton");
+
+displayTodosButton.addEventListener('click', function(){
+	todoList.displayTodos();
+});
