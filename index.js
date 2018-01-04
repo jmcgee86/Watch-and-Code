@@ -71,3 +71,5 @@ displayTodosButton.addEventListener('click', function(){
 toggleAllButton.addEventListener('click', function(){
 	todoList.toggleAll();
 });
+
+//version 7 complete
