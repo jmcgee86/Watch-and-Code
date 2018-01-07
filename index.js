@@ -21,22 +21,18 @@ var todoList = {
 		var totalTodos = this.todos.length;
 		var completedTodos = 0;
 		//get number of completed todos
-		for (var i = 0; i<totalTodos; i++){
-			if (this.todos[i].completed ===true){
+		this.todos.forEach(function(todo){
+			if (todo.completed ===true){
 				completedTodos++;
 			}
-		}
-		//if everything is true, make everything false
+		});
+	this.todos.forEach(function(todo){
 		if (completedTodos === totalTodos){
-			//make everything false
-			for (var i = 0; i<totalTodos;i++){
-				this.todos[i].completed = false;
-			}
+			todo.completed = false;
 		}else{
-			for (var i = 0; i<totalTodos; i++){
-				this.todos[i].completed = true;
-			}
+			todo.completed = true;
 		}
+	});
 	}
 };
 
@@ -115,5 +111,3 @@ var view = {
 };
 
 view.setUpEventListeners();
-
-//version10 Complete
